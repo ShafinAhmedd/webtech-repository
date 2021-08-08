@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <title>Password Change</title>
+</head>
+
+<body style="background-color:rgb(97, 105, 116);">
+  <br />
+  <br />
+  <div class="container" style="width:350px;">
+    <h2 align="center">CHANGE PASSWORD</h2><br />
+    <script src="chgpass.js"></script>
+    <form name="myform" method="post" action="" onsubmit="validateform()">
+      Current Password: <input type="text" name="currpassword" id="currpassword" onblur="checkCurrPass()"><br />
+      <span id="currpasswordErr"></span><br />
+      New Password: <input type="password" id="password" name="password" onblur="checkPass()"><br />
+      <span id="passwordErr"></span><br />
+      Confirm Password: <input type="password" id="confpassword" name="confpassword" onblur="checkConfPass()"><br />
+      <span id="confpasswordErr"></span><br />
+      <input type="submit" value="update">
+    </form>
+
+</body>
+
+</html>

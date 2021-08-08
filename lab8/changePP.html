@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title></title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:rgb(97, 105, 116);">
+     <br />
+     <h1>Account</h1>
+     <br />
+     <div class="container" style="width:500px;">
+          <h3 align="">Change Profile Picture</h3><br />
+          <script src="changePP.js"></script>
+          <form name="myform" action="" method="POST" onchange="return ValidateFileUpload()">
+
+               <input type="file" name="dataFile" id="fileChooser"><br><br>
+               <input type="submit" name="updatePP" value="upload"><br />
+
+
+          </form>
+     </div>
+     <br />
+</body>
+
+</html>

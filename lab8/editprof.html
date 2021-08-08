@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title></title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:rgb(97, 105, 116);">
+     <br />
+     <h1>Account</h1>
+     <br />
+     <div class="container" style="width:500px;">
+          <h3 align="">Edit Profile</h3><br />
+          <script src="editprof.js"></script>
+          <form name="myform" action="" method="POST" onsubmit="validateForm()">
+
+               <br />
+
+               <label for="email">Name</label>
+               <input type="text" name="name" id="name" onblur="checkName()"><br />
+               <span id="nameErr"></span><br />
+
+
+               <label for="email">E-mail</label>
+               <input type="text" name="email" id="email" onblur="checkemail()"><br />
+               <span id="emailErr"></span>
+               <br />
+
+               <label for="email">User Name</label>
+               <input type="text" name="username" id="username" onblur="checkUsername()"><br />
+               <span id="usernameErr"></span>
+               <br />
+
+               <fieldset>
+
+                    <label for="email">Gender</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" selected>Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br><br>
+
+                    <legend for="email">Date of Birth:</legend>
+                    <input type="date" name="dob" id="dob" onblur="checkdob()"> <br><br>
+                    <span id="dobErr"></span><br />
+               </fieldset>
+               <input type="submit" name="submit" value="submit"><br />
+          </form>
+     </div>
+     <br />
+</body>
+
+</html>
